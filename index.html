@@ -6,9 +6,9 @@
     <title>FitVerse | Home</title>
 
     <!-- CSS Dosyaları (Vite yolu ile) -->
-    <link rel="stylesheet" href="./src/style/navbar.css" />
-    <link rel="stylesheet" href="./src/style/carousel.css" />
-    <link rel="stylesheet" href="./src/style/footer.css" />
+    <link rel="stylesheet" href="src/style/navbar.css" />
+    <link rel="stylesheet" href="src/style/carousel.css" />
+    <link rel="stylesheet" href="src/style/footer.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -31,13 +31,13 @@
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="./img/banner2.png" alt="Slide 1" />
+            <img src="img/banner2.png" alt="Slide 1" />
           </div>
           <div class="swiper-slide">
-            <img src="./img/banner1.png" alt="Slide 2" />
+            <img src="img/banner1.png" alt="Slide 2" />
           </div>
           <div class="swiper-slide">
-            <img src="./img/banner3.png" alt="Slide 3" />
+            <img src="img/banner3.png" alt="Slide 3" />
           </div>
         </div>
         <div class="swiper-pagination"></div>
@@ -48,42 +48,42 @@
       <!-- Tanıtım Kartları -->
       <section class="feature-cards">
         <div class="card-grid">
-          <a href="./src/pages/my-status.html" class="feature-card">
-            <img src="./img/istatistik.jpg" alt="Status" />
+          <a href="src/pages/my-status.html" class="feature-card">
+            <img src="img/istatistik.jpg" alt="Status" />
             <h3>My Status</h3>
             <p>
               Kilo, yağ oranı ve genel vücut ölçümlerini girerek gelişimini
               grafiklerle takip edebilirsin.
             </p>
           </a>
-          <a href="./src/pages/news_page.html" class="feature-card">
-            <img src="./img/haber.jpg" alt="News" />
+          <a href="src/pages/news_page.html" class="feature-card">
+            <img src="img/haber.jpg" alt="News" />
             <h3>News</h3>
             <p>
               Spor dünyasından güncel haberler, egzersiz trendleri ve bilimsel
               makaleler burada.
             </p>
           </a>
-          <a href="./src/pages/movements.html" class="feature-card">
-            <img src="./img/hareket.png" alt="Movements" />
+          <a href="src/pages/movements.html" class="feature-card">
+            <img src="img/hareket.png" alt="Movements" />
             <h3>Movements</h3>
             <p>
               3D model üzerinden kas seçimi yap, o kasa özel egzersizleri
               görüntüle.
             </p>
           </a>
-          <a href="./src/pages/recipes.html" class="feature-card">
-            <img src="./img/yemekler.jpg" alt="Recipes" />
+          <a href="src/pages/recipes.html" class="feature-card">
+            <img src="img/yemekler.jpg" alt="Recipes" />
             <h3>Fit Recipes</h3>
             <p>Sağlıklı, protein ağırlıklı tarifler seni bekliyor.</p>
           </a>
-          <a href="./src/pages/bmi.html" class="feature-card">
-            <img src="./img/hesap.png" alt="Calculators" />
+          <a href="src/pages/bmi.html" class="feature-card">
+            <img src="img/hesap.png" alt="Calculators" />
             <h3>Calculators</h3>
             <p>Vücut kitle endeksi, kalori ihtiyacı ve yağ oranı hesaplama.</p>
           </a>
-          <a href="./src/pages/faq.html" class="feature-card">
-            <img src="./img/ffaq.jpg" alt="FAQ" />
+          <a href="src/pages/faq.html" class="feature-card">
+            <img src="img/ffaq.jpg" alt="FAQ" />
             <h3>FAQ</h3>
             <p>Sık sorulan sorulara cevap bul ya da sorunuzu bize iletin.</p>
           </a>
@@ -95,17 +95,17 @@
 
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="module" src="/src/js/script.js"></script>
+    <script type="module" src="src/js/script.js"></script>
 
     <!-- Navbar ve Footer JS ile dahil ediliyor -->
     <script>
-      fetch("./src/pages/navbar.html")
+      fetch("src/pages/navbar.html")
         .then((res) => res.text())
         .then((data) => {
           document.getElementById("navbar-placeholder").innerHTML = data;
         });
 
-      fetch("./src/pages/footer.html")
+      fetch("src/pages/footer.html")
         .then((res) => res.text())
         .then((data) => {
           document.getElementById("footer-placeholder").innerHTML = data;
